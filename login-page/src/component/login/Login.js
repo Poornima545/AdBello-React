@@ -2,21 +2,24 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Adbello from '../assets/logo.jpg'
 import './Login.css'
+import { useForm } from 'react-hook-form';
 
 
 function Login() {
-    const [login, setLogin] = useState({ email: '', password: '' })
+    // const [login, setLogin] = useState({ email: '', password: '' })
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(login);
-        setLogin({ email: '', password: '' })
-    }
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(login);
+    //     setLogin({ email: '', password: '' })
+    // }
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setLogin((prev) => ({ ...prev, [name]: value }));
-    }
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setLogin((prev) => ({ ...prev, [name]: value }));
+    // }
+
+    const form = useForm()
 
     return (
         <div id='login-container'>
