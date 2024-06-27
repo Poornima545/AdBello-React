@@ -6,21 +6,7 @@ import { useForm } from 'react-hook-form';
 
 
 function Login() {
-    // const [login, setLogin] = useState({ email: '', password: '' })
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     console.log(login);
-    //     setLogin({ email: '', password: '' })
-    // }
-
-    // const handleChange = (e) => {
-    //     const { name, value } = e.target;
-    //     setLogin((prev) => ({ ...prev, [name]: value }));
-    // }
-
-    const form = useForm()
-
+    const form = useForm();
     return (
         <div id='login-container'>
             <img src={Adbello} alt='adbello logo' className='logo' />
