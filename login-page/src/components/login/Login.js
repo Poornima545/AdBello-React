@@ -1,8 +1,8 @@
 // import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import Adbello from '../assets/logo.png';
-import './Login.css'
+import Adbello from '../../assets/logo.png';
+import './style.css'
 // import { error } from 'console';
 
 
