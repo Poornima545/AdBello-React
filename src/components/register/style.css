@@ -19,11 +19,11 @@ body {
     margin: 5rem;
     width: 100%;
     max-width: 300px;
-    line-height: 1;
 }
 
 .logo {
     width: 150px;
+    margin-top: 1rem;
 }
 
 .input-group {
@@ -121,4 +121,24 @@ input[type="checkbox"] {
     color: #fff;
     font-size: 13px;
     text-align: left;
+}
+
+/* media queries for responsive design */
+
+@media (max-width: 450px) {
+    #register-container {
+        margin: 0 auto;
+        margin-top: 5rem;
+        background-color: peachpuff;
+    }
+
+    .input-group {
+        width: 100%;
+        max-width: none;
+    }
+
+    .logo {
+        width: 100px;
+        align-items: center;
+    }
 }

@@ -19,19 +19,10 @@ body {
     margin: 5rem;
     width: 100%;
     max-width: 350px;
-    line-height: 1;
 }
 
 .logo {
     width: 150px;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    padding: 30px 5px;
 }
 
 .input-group input {
@@ -102,6 +93,7 @@ button:hover {
     font-size: 13px;
 }
 
+
 .error {
     font-size: 13px;
     color: red;
@@ -109,94 +101,28 @@ button:hover {
     margin-top: 5px;
 }
 
-/*Forgot Password*/
 
-.forgotPassword {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 5rem;
-    text-align: start;
-}
+/*Media Queries for Responsive Design*/ 
 
-.forgotPassword h1 {
-    margin-bottom: 40px;
-    font-weight: 700;
-}
+/* Mobile View(it change the color when width is below 450)  */
+@media (max-width: 450px) {
+    #login-container {
+        margin: 0 auto;
+        margin-top: 5rem;
+        background-color: peachpuff;
+    }
 
-.password-para {
-    font-size: 13px;
-}
-
-.forgotPassword input {
-    padding: 6px 0;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 2px solid;
-    width: 100%;
-    max-width: 390px;
-}
-
-.password {
-    border-radius: 30px;
-    border: 2px solid;
-    width: 100%;
-}
-
-.forgotPassword label {
-    font-weight: 700;
-}
-
-.register-link-password {
-    color: #0056b3;
-    margin-top: 10px;
-    font-size: 12px;
-    text-align: end;
-    margin-right: 1rem;
-}
-
-/*Media Queries for Responsive Design*/
-
-/* Mobile View */
-@media (max-width: 600px) {
     .input-group {
-        padding: 16px;
+        width: 100%;
+        max-width: none;
     }
 
     .logo {
         width: 100px;
     }
 
-    .button {
-        padding: 12px;
-        font-size: 16px;
-    }
-}
-
-
-/* Desktop View */
-@media (min-width: 758px) {
-    #login-container {
+    .input-group input,
+    button {
         width: 100%;
-        max-width: 500px;
-        padding: 1rem;
-        margin: 1rem;
-    }
-
-    .input-group {
-        padding: 30px;
-    }
-
-    .logo {
-        width: 200px;
-    }
-
-    .input-group input {
-        font-size: 18px;
-    }
-
-    .button {
-        padding: 14px;
-        font-size: 18px;
     }
 }

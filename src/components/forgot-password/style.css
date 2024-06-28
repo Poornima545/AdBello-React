@@ -1,0 +1,43 @@
+.forgotPassword {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 5rem;
+    text-align: start;
+}
+
+.forgotPassword h1 {
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.password-para {
+    font-size: 13px;
+}
+
+.forgotPassword input {
+    padding: 6px 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid;
+    width: 100%;
+    max-width: 390px;
+}
+
+.password {
+    border-radius: 30px;
+    border: 2px solid;
+    width: 100%;
+}
+
+.forgotPassword label {
+    font-weight: 700;
+}
+
+.register-link-password {
+    color: #0056b3;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: end;
+    margin-right: 1rem;
+}
