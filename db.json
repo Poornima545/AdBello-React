@@ -1,0 +1,31 @@
+{
+    "users": [
+        {
+            "id": "4554",
+            "email": "poornimac714@gmail.com",
+            "fullName": "Shashu",
+            "reason": "learn",
+            "phone": "7890654324",
+            "password": "hbngtyoplma",
+            "terms": true
+        },
+        {
+            "id": "caba",
+            "email": "poorny789@gmail.com",
+            "fullName": "kavitha",
+            "reason": "learn",
+            "phone": "8497020408",
+            "password": "xvaxdipwpfoeg",
+            "terms": true
+        },
+        {
+            "id": "8235",
+            "email": "poornimagowda5425@gmail.com",
+            "fullName": "Shashu",
+            "reason": "learn",
+            "phone": "8660736176",
+            "password": "htygfde",
+            "terms": true
+        }
+    ]
+}

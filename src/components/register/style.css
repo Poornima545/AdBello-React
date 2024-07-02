@@ -6,9 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: auto;
 }
 
 #register-container {
@@ -18,7 +19,7 @@ body {
     padding: 1rem;
     margin: 5rem;
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .logo {
@@ -32,6 +33,7 @@ body {
     width: 100%;
     max-width: 400px;
     padding: 30px 5px;
+    margin: 0 auto;
 }
 
 .input-group input {
@@ -121,6 +123,36 @@ input[type="checkbox"] {
     color: #fff;
     font-size: 13px;
     text-align: left;
+}
+
+.user-list h2 {
+    text-align: start;
+    margin-top: 0;
+    color: white;
+
+}
+
+.user-list li {
+    color: white;
+    align-items: center;
+}
+
+
+.user-list button {
+    background-color: #dc3545;
+    max-width: 100px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+.user-list button:hover {
+    background-color: #c82333;
 }
 
 /* media queries for responsive design */
