@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getUsers, deleteUser} from './userService';
+import { getUsers, deleteUser } from './userService';
 import './style.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -32,9 +32,9 @@ function Users() {
             <ol>
                 {users.map(user => (
                     <li key={user.id} className='list-of-user'>
-                      <span> {user.email}</span> 
+                        <span> {user.email}</span>
                         <button className='action-btn' onClick={() => deleteUser(user.id)}>Delete</button>
-                        <button  className='action-btn' onClick={() => handleUpdate(user.id)}>Update</button>
+                        <button className='action-btn' onClick={() => handleUpdate(user.id)}>Update</button>
                     </li>
                 ))}
             </ol>
