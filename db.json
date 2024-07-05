@@ -1,15 +1,6 @@
 {
   "users": [
     {
-      "id": "c908",
-      "email": "poornimac714@gmail.com",
-      "fullName": "poornima",
-      "reason": "learn",
-      "phone": "8497020408",
-      "password": "gtedxc",
-      "terms": true
-    },
-    {
       "id": "b62e",
       "email": "poornimac714@gmail.com",
       "fullName": "poornima",
