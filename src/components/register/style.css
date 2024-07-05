@@ -61,7 +61,7 @@ body {
     color: black;
 }
 
-button {
+.register-btn {
     background-color: #4fe3c1;
     color: white;
     width: 100%;
@@ -73,7 +73,7 @@ button {
     margin-top: 15px;
 }
 
-button:hover {
+.register-btn:hover {
     background-color: #0056b3;
     border: 1px solid #0056b3;
 }
