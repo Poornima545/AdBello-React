@@ -19,7 +19,7 @@ function Login() {
     return (
         <div id='login-container'>
             <img src={Adbello} alt='adbello logo' className='logo' />
-            <form onSubmit={handleSubmit(onSubmit)} className='input-group'>
+            <form onSubmit={handleSubmit(onSubmit)} className='input-grp'>
                 <input
                     type='email'
                     placeholder='Email'
