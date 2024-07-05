@@ -1,31 +1,30 @@
 {
-    "users": [
-        {
-            "id": "4554",
-            "email": "poornimac714@gmail.com",
-            "fullName": "Shashu",
-            "reason": "learn",
-            "phone": "7890654324",
-            "password": "hbngtyoplma",
-            "terms": true
-        },
-        {
-            "id": "caba",
-            "email": "poorny789@gmail.com",
-            "fullName": "kavitha",
-            "reason": "learn",
-            "phone": "8497020408",
-            "password": "xvaxdipwpfoeg",
-            "terms": true
-        },
-        {
-            "id": "8235",
-            "email": "poornimagowda5425@gmail.com",
-            "fullName": "Shashu",
-            "reason": "learn",
-            "phone": "8660736176",
-            "password": "htygfde",
-            "terms": true
-        }
-    ]
+  "users": [
+    {
+      "email": "test@test1.com",
+      "id": "9a4f"
+    },
+    {
+      "id": "2866",
+      "email": "test@poo.com",
+      "fullName": "pooo",
+      "reason": "learn",
+      "phone": "8660736176",
+      "password": "bhgty!123",
+      "terms": true
+    },
+    {
+      "email": "test@test3.com",
+      "id": "3e3c"
+    },
+    {
+      "id": "c94a",
+      "email": "poornimac714@gmail.com",
+      "fullName": "poornima",
+      "reason": "learn",
+      "phone": "8497020408",
+      "password": " jjhkj",
+      "terms": true
+    }
+  ]
 }
