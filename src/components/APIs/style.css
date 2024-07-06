@@ -56,52 +56,14 @@ li {
 
 /* Users Update */
 
-.update-container {
-    margin-top: 5rem;
-    align-items: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    padding: 2rem;
-}
 
-.update-container h2 {
-    font-weight: 700;
-    padding-bottom: 2rem;
-
-}
-
-.update-container input {
-    padding: 5px;
-    max-width: 500px;
-
-}
-
-.btn-primary {
-    align-items: center;
-    margin-top: 1rem;
-    color: white;
-    cursor: pointer;
-    border: none;
-    padding: 10px 5rem;
-    font-size: 14px;
-}
-
-.update-container button:hover {
-    background-color: #c82333;
-    border-color: #c82333;
-}
-
-.update-container input::placeholder {
-    color: #cccc;
-}
-
-/* users data */
+/* manage data */
 
 .container h2 {
     margin-top: 2rem;
 }
 
-.users-manage-data{
+.users-manage-data {
     display: flex;
     gap: 20px;
 }

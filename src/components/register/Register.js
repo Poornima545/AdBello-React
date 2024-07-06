@@ -19,7 +19,7 @@ function Register() {
             alert('Form is Submitted');
             console.log(response.data);
             reset();
-            navigate('/users');
+            navigate('/manage-data');
         } catch (error) {
             console.error('There was an error submitting the form!', error);
         }

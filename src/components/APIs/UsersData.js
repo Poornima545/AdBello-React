@@ -24,10 +24,14 @@ function UsersData() {
         navigate(`/update-user/${id}`)
     }
 
+    const handleAddNewUser = () => {
+        navigate('/update-user/new')
+    }
+
     function handleDelete(id) {
         deleteUser(id)
-            .then(response => {
-                setUsers(response.data)
+            .then(() => {
+                setUsers(users.filter(user => user.id !== id));
             })
             .then(response => {
                 console.log(response.data);
@@ -39,7 +43,7 @@ function UsersData() {
 
     return (
         <div className='container'>
-            <h2>Users Data</h2>
+            <h2>Manage Users Data</h2>
             <table className="table">
                 <thead>
                     <tr>
@@ -48,9 +52,7 @@ function UsersData() {
                         <th scope="col">Full Name</th>
                         <th scope='col'>Reason</th>
                         <th scope='col'>phone Number</th>
-                        <th scope='col'>Password</th>
                         <th scope='col'>Button</th>
-                        <th scope='col'>Add New User</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -62,19 +64,17 @@ function UsersData() {
                                 <td>{user.fullName}</td>
                                 <td>{user.reason}</td>
                                 <td>{user.phone}</td>
-                                <td>{user.password}</td>
                                 <td className='users-manage-data'>
                                     <button className="btn btn-outline-warning" onClick={() => handleUpdate(user.id)}>Update</button>
                                     <button className="btn btn-outline-warning" onClick={() => handleDelete(user.id)}>Delete</button>
                                 </td>
-                                <td>
-                                    <button className='btn btn-outline-warning'>Add</button>
-                                </td>
-
                             </tr>
                         })}
                 </tbody>
             </table>
+            <span>
+                <button type="button" class="btn btn-outline-dark" onClick={handleAddNewUser}>Add New User</button>
+            </span>
         </div>
     )
 }
