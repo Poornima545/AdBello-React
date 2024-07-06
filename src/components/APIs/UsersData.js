@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { deleteUser, getUsers } from './userService'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 function UsersData() {
     const navigate = useNavigate()
     const [users, setUsers] = useState([])
 
-    function fetchUser() {
+
+    function fetchUsers() {
         getUsers()
             .then(response => {
                 setUsers(response.data)
@@ -17,16 +18,16 @@ function UsersData() {
     }
 
     useEffect(() => {
-        fetchUser()
-    })
+        fetchUsers()
+    },[])
 
     function handleUpdate(id) {
         navigate(`/update-user/${id}`)
     }
 
-    const handleAddNewUser = () => {
-        navigate('/update-user/new')
-    }
+    // const handleAddNewUser = () => {
+    //     navigate('/update-user/new')
+    // }
 
     function handleDelete(id) {
         deleteUser(id)
@@ -73,7 +74,7 @@ function UsersData() {
                 </tbody>
             </table>
             <span>
-                <button type="button" class="btn btn-outline-dark" onClick={handleAddNewUser}>Add New User</button>
+                {/* <button type="button" className="btn btn-outline-dark" onClick={handleAddNewUser}>Add New User</button> */}
             </span>
         </div>
     )

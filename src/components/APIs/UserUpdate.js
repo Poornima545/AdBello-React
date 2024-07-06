@@ -10,18 +10,22 @@ function UserUpdate() {
     const navigate = useNavigate()
     const { id } = useParams()
 
-    const fetchUser = async () => {
+    const fetchUsers = async () => {
         try {
-            const userData = await getUsers()
+            const response = await getUsers(id)
+            const userData = response.data;
             setValue('email', userData.email)
-            console.log(userData.email);
+            setValue('fullName', userData.fullName)
+            setValue('reason', userData.reason)
+            setValue('phone', userData.phone)
+            console.log(userData);
         } catch (error) {
             console.error('There was an error fetching the user!', error);
         }
     }
 
     useEffect(() => {
-        fetchUser();
+        fetchUsers();
     })
 
     const onSubmit = async (data) => {
@@ -41,7 +45,7 @@ function UserUpdate() {
                 <input
                     type='email'
                     className='form-control'
-                    placeholder='Change Your Email Here..'
+                    placeholder='Your Email'
                     {...register('email', {
                         pattern: {
                             value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
@@ -60,7 +64,7 @@ function UserUpdate() {
                     })}
                     required
                 />
-                {errors.fullName && <div>{errors.fullName.message}</div>}
+                {errors.fullName && <div className='error'>{errors.fullName.message}</div>}
                 <br />
                 <select className="form-select"
                     {...register('reason', {

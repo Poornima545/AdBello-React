@@ -6,8 +6,9 @@ export const createUser = async (data) => {
     return await axios.post(API_URL, data);
 }
 
-export const getUsers = async () => {
-    return await axios.get(API_URL);
+export const getUsers = async (id) => {
+    const url = id ? `${API_URL}/${id}` : API_URL;
+    return await axios.get(url);
 }
 
 export const updateUser = async (id, updateData) => {

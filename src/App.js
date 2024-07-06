@@ -23,7 +23,7 @@ function App() {
           <Route path='/terms-conditions' element={<TermsAndConditions />} />
           {/* <Route path='/users' element={<Users />} /> */}
           <Route path='/update-user/:id' element={<UserUpdate />} />
-          <Route path='/manage-data' element={<UsersData />} />
+          <Route path='/manage-data/' element={<UsersData />} />
         </Routes>
       </Router>
     </div>

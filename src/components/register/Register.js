@@ -91,9 +91,9 @@ function Register() {
                     required
                 >
                     <option value=' '>I'm here to...</option>
-                    <option value='learn'>Learn to Front-end developer</option>
-                    <option value='learn'>Learn to Back-end developer</option>
-                    <option value='learn'>Learn to SQL developer</option>
+                    <option value='1'>Learn to Front-end developer</option>
+                    <option value='2'>Learn to Back-end developer</option>
+                    <option value='3'>Learn to SQL developer</option>
                 </select>
                 {errors.reason && <div className='error'>{errors.reason.message}</div>}
                 <br />
